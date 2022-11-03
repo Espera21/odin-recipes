@@ -1,5 +1,31 @@
 /**/
-* {
-    background-color: whitesmoke;
-    font-family: arial, tahoma, monospace;
+* { 
+    background-color: #e6eada;
+    font-family: arial, tahoma monospace;
+    color: #494c51;
+}
+
+.header-main {
+    
+    text-align: center;
+    font-size: 50px;
+}
+
+.image {
+    width: 630px;
+    float: left;
+    border-radius: 15px;
+}
+
+.homepage-button {
+    background-color: #494c51;
+    color: #e6eada;
+    border: none;   
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 14px;
+}
+
+.bottom-image {
+    
 }

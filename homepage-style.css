@@ -1,5 +1,6 @@
 /**/
-* {  
+* { 
+    background-color: #e6eada;
     font-family: arial, tahoma monospace;
 }
 
@@ -8,7 +9,7 @@
 }
 
 .header-main {
-    color: #575b61;
+    color: #494c51;
     text-align: center;
     font-size: 50px;
 }
