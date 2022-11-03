@@ -1,0 +1,15 @@
+/**/
+* {
+    background-color: whitesmoke;
+    font-family: arial, monospace;
+}
+
+.header-main {
+    color: #575b61;
+    text-align: center;
+}
+
+.recipe-links {
+    color: #006cbf;
+    font-weight: bold;
+}
