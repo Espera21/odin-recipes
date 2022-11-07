@@ -10,8 +10,7 @@
 }
 
 .image {
-    float: right;
-    width: 700px; height: auto;
+    width: 750px; height: auto;
     margin: 20px; padding: 14px;
     border-style: double; border-radius: 24px;
 }
@@ -19,5 +18,15 @@
  .content {
     border-style: double; border-radius: 24px;
     margin: 20px; padding: 14px;
-    position: fixed;
  }
+
+ .homepage-button {
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: #989ba0;
+    color: #e6eada;
+}
