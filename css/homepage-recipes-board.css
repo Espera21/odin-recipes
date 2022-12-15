@@ -5,25 +5,34 @@
 .recipes-board-container {
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 40px;
+    row-gap: 40px;
 
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 
     padding: 30px;
     border-radius: 20px;
 }
-
+@media (max-width: 1200px) {
+    .recipes-board-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 800px) {
+    .recipes-board-container {
+        grid-template-columns: 1fr;
+    }
+}
 
 .recipe-link {
     display: flex;
     justify-content: center;
     position: relative;
-    border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 22px;
     height: 300px;
     width: 300px;
 }
+
 .recipe-board-image {
     position: relative;
     object-fit: cover;
