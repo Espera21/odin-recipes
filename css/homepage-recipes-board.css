@@ -1,3 +1,78 @@
 .recipes-board-container-main {
-    
+    display: flex;
+    justify-content: center;
+}
+.recipes-board-container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+
+    padding: 30px;
+    border-radius: 20px;
+}
+
+
+.recipe-link {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 22px;
+    height: 300px;
+    width: 300px;
+}
+.recipe-board-image {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.recipe-board-image:hover {
+    opacity: 0.85;
+}
+.recipe-image-hover-description-box {
+    position: absolute;
+    background-color: gray;
+
+    border-radius: 0 0 20px 20px;
+
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 0px;
+
+    opacity: 0;
+    transition: opacity 0.5s, height 0.5s;
+}
+.recipe-image-hover-description {
+    position: absolute;
+    bottom: 5px;
+
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+
+    opacity: 0;
+    transition: opacity 0.2s, bottom 0.5s;
+}
+.recipe-link:hover .recipe-image-hover-description-box {
+    opacity: 0.8;
+    z-index: 99;
+    height: 60px;
+}
+.recipe-link:hover .recipe-image-hover-description {
+    align-items: center;
+    opacity: 1;
+    bottom: 20px;
+    z-index: 100;
 }
