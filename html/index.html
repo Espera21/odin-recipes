@@ -6,6 +6,9 @@
         <!--CSS-->
         <link rel="stylesheet" href="/css/general.css">
         <link rel="stylesheet" href="/css/homepage-recipes-board.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="stylesheet" href="/css/sidebar-left.css">
+        <link rel="stylesheet" href="/css/sidebar-right.css">
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +16,41 @@
     </head>
 
     <body>
+
+        <!--Header-->
+        <header class="header-homepage">
+            <div></div>
+        </header>
+
+        <!--Sidebar Left-->
+        <div class="sidebar-left-homepage">
+            <div>content</div>
+        </div>
+
+        <!--Sidebar Right-->
+        <div class="sidebar-right-homepage">
+           <div>content</div>
+        </div>
+
         <!--Recipe Main Board-->
         <div class="recipes-board-container-main">
             <div class="recipes-board-container">
                 <!--Grilled Cheese Sandwich-->
+                
                 <a class="recipe-link" href="/html/grilled-cheese-sandwich.html">               
                     <img class="recipe-board-image" src="/images/grilled-cheese-sandwich-image_01.jpg" alt="Grilled Cheese Sandwich">
-                    <div class="recipe-image-hover-description-box"></div>
-                    <div class="recipe-image-hover-description">Show Me The Recipe!</div>
+                    <div class="image-hover-container">    
+                        <div class="recipe-image-hover-description-box">
+                            <div class="recipe-image-hover-description">Show Me The Recipe!</div>
+                        </div>
+                        <div class="add-to-list">
+                            &#43;
+                        </div>
+                    </div>
                     <div class="recipe-image-description-box"></div>
                     <div class="recipe-image-description">Grilled Cheese Sandwich</div>
                 </a>
+               
                 <!--Simple Baked Chicken Breasts-->
                 <a class="recipe-link" href="/html/simple-baked-chicken-breasts.html">               
                     <img class="recipe-board-image" src="/images/simple-baked-chicken-breasts.jpg" alt="Simple Baked Chicken Breasts">

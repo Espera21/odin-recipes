@@ -11,14 +11,15 @@
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 
     padding: 30px;
+    margin-top: 114px;
     border-radius: 20px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1760px) {
     .recipes-board-container {
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 1410px) {
     .recipes-board-container {
         grid-template-columns: 1fr;
     }
@@ -32,8 +33,9 @@
     height: 300px;
     width: 300px;
 }
-.recipe-link:active {
-    opacity: 0.6;
+.recipe-link:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    opacity: 0.85;
 }
 
 .recipe-board-image {
@@ -49,20 +51,24 @@
     cursor: pointer;
     transition: opacity 0.2s, box-shadow 0.2s;
 }
-.recipe-board-image:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    opacity: 0.85;
-}
 
-.recipe-image-hover-description-box {
+.image-hover-container {
     position: absolute;
-    background-color: gray;
-
-    border-radius: 20px 20px 0 0;
+    display: flex;
 
     top: 0;
     left: 0;
     right: 0;
+}
+.recipe-image-hover-description-box {
+    position: absolute;
+    background-color: gray;
+
+    border-radius: 20px 0 0 0;
+
+    top: 0;
+    left: 0;
+    right: 60px;
     height: 20px;
 
     opacity: 0;
@@ -74,9 +80,41 @@
     pointer-events: none;
 }
 
+.add-to-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(242, 82, 82);
+
+    border-radius: 0 20px 0 0;
+
+    color: rgb(249 250 251);
+    font-size: 26px;
+    font-weight: 300;
+    padding-bottom: 4px;
+
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 16px;
+
+    opacity: 0;
+    transition: opacity 0.5s, height 0.5s, background-color 0.5s;
+}
+.recipe-link:hover .add-to-list {
+    opacity: 0.55;
+    height: 36px;
+    
+    color: rgb(249 250 251);
+    font-size: 26px;
+    font-weight: 300;
+}
+
 .recipe-image-hover-description {
     position: absolute;
     top: 5px;
+    padding-left: 20px;
 
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -96,6 +134,7 @@
 .recipe-image-description {
     position: absolute;
     bottom: 20px;
+    pointer-events: none;
 
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -106,6 +145,7 @@
 .recipe-image-description-box {
     position: absolute;
     background-color: gray;
+    pointer-events: none;
 
     border-radius: 0 0 20px 20px;
 

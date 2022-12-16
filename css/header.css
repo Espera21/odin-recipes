@@ -1,0 +1,15 @@
+.header-homepage {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    height: 80px;
+    z-index: 101;
+
+    border-radius: 20px;
+
+    background-color: rgb(218, 107, 107);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    opacity: 0.9;
+}

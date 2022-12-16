@@ -1,0 +1,30 @@
+.sidebar-left-homepage {
+    display: flex;
+    position: fixed;
+    top: 120px;
+    left: 20px;
+    bottom: 20px;
+    width: 320px;
+    z-index: 101;
+
+    border-radius: 20px;
+
+    background-color: rgb(218, 107, 107);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    opacity: 0.9;
+}
+@media (max-width: 1110px) {
+    .sidebar-left-homepage {
+        width: 250px;
+    }
+}
+@media (max-width: 980px) {
+    .sidebar-left-homepage {
+        width: 200px;
+    }
+}
+@media (max-width: 870px) {
+    .sidebar-left-homepage {
+        width: 150px;
+    }
+}
