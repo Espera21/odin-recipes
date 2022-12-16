@@ -1,5 +1,16 @@
 body {
     font-family: 'Inter', Helvetica, Arial, Helvetica, sans-serif;
-    background-color: rgb(249 250 251);
+    padding: 0;
+    margin: 0;
+    height: 5200px;
+    
     color: rgb(75 85 99);
+}
+.background-image {
+    position: relative;
+    height: 5200px;
+    background-color: rgb(238, 233, 233);
+    background-image: url(/images/woods-aurora-edit-1.jpg);
+    background-repeat: space;
+    z-index: 1;
 }

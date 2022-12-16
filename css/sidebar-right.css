@@ -11,7 +11,7 @@
 
     background-color: rgb(218, 107, 107);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-    opacity: 0.9;
+    opacity: 0.8;
 }
 @media (max-width: 1110px) {
     .sidebar-right-homepage {
